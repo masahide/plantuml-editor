@@ -2,6 +2,9 @@ var webpack = require('webpack')
 
 module.exports = {
   configureWebpack: {
+    devServer: {
+      disableHostCheck: true
+    },
     resolve: {
       alias: {
         vue$: 'vue/dist/vue.esm.js'
