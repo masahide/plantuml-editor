@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    image: masahide/plantuml-editor
+    ports:
+    - "8080:8080"
+    links:
+    - server
+  server:
+    image: plantuml/plantuml-server:jetty
+    ports:
+    - "4000:8080"
